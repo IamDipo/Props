@@ -1,0 +1,2031 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ff{
+    font-family: 'Noto Sans JP', sans-serif;
+} */
+.page1{
+    width: 100vw;
+    background-image: url(./images/hero_bg_1.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    height: 100vh;
+    animation: change 5s infinite ease-in-out;
+}
+@keyframes change {
+    0%{
+        background-image: url(./images/hero_2.jpg);
+    }
+}
+.navbar{
+    margin-top: 1.5rem;
+    position: fixed;
+    display: flex;
+    align-self: start;
+    align-items: center;
+    width: 60vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: 7vh;
+    background-color: white;
+    justify-content: space-between;
+}
+.logo{
+    cursor: pointer;
+    color: #1f6e8b;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.navbar ul{
+    text-decoration: none;
+    display: flex;
+    list-style-type: none;
+    gap: 1.5rem;
+}
+.navbar li a{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 300;
+    color: black;
+    transition: ease-out 300ms;
+}
+.navbar li a:hover{
+    text-decoration: underline;
+}
+.navbar ul li .Home{
+    color: #1f6e8b;
+}
+.page1-text{
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.page1-h1{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 2.5rem;
+}
+
+.input{
+    width: 30rem;
+    height: 3rem;
+    border-radius: 12rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1rem;
+    outline: none;
+    padding: 0 2%;
+    border: none;
+}
+.page1-btn{
+    padding: 0.7rem 2rem;
+    background: linear-gradient(to right, #8c2b8d, #e52b80);
+    color: white;
+    font-family: 'Noto Sans JP', sans-serif;
+    border: none;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(31,110,139, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+.page1-btn:hover, .page1-btn:focus, .page1-btn:active{
+    box-shadow: 0 0 20px rgb(31,110,139, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.input-btn{
+    display: flex;
+    gap: 1.5rem;
+}
+.page1-p{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1rem;
+    width: 45rem;
+}
+.page1-text a{
+    color: white;
+}
+.page2{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 4rem;
+}
+.page2-top{
+    margin-top: 12rem;
+    width: 100rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 38rem;
+}
+.top-LHS{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top-RHS{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page2-h2{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 2.5rem;
+    color: #1f6e8b;
+}
+.page2-top-btn{
+    padding: 1rem 2rem;
+    background: linear-gradient(to right, #8c2b8d, #e52b80);
+    color: white;
+    font-family: 'Noto Sans JP', sans-serif;
+    border: none;
+    border-radius: 4rem;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(255,225,255, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+.page2-top-btn:hover, .page2-top-btn:focus, .page2-top-btn:active{
+    box-shadow: 0 0 20px rgb(255,225,255, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.page2-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+.page2-imgs img{
+    padding-top: 2rem;
+    width: 410px;
+    height: 410px;
+}
+.page2-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.icn-txt{
+    display: flex;
+    gap: 1rem;
+}
+.page2-h3{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.3rem;
+}
+.page3{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 4rem;
+}
+.page3-top{
+    margin-top: 8rem;
+    width: 100rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50rem;
+}
+.page3-h2{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 2.5rem;
+    color: #1f6e8b;
+}
+.page3-top .top-RHS{
+    gap: 0.5rem;
+}
+.page3-btn{
+    padding: 0.5rem 1.3rem;
+    background: #eaf0f3;
+    color: #1f6e8b;
+    font-family: 'Noto Sans JP', sans-serif;
+    border: none;
+    border-radius: 1.3rem;
+    cursor: pointer;
+}
+.page3-btn:hover, .page3-btn:focus, .page3-btn:active{
+    background-color: #1f6e8b;
+    color: #eaf0f3;
+}
+.page3-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+.circle-1{
+    background-image: url(./images/person_1.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle-2{
+    background-image: url(./images/person_3.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle-3{
+    background-image: url(./images/person_4.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    padding-top: 2rem;
+    width: 390px;
+    height: 400px;
+}
+.page3-h5{
+    padding-top: 1rem;
+    color: #1f6e8b;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.page3-p{
+    padding-top: 1rem;
+    width: 26rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 0.9rem;
+}
+.page3-pp{
+    padding-top: 1rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1rem;
+    color: #ababab;
+}
+.page4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 4rem;
+    flex-direction: column;
+    gap: 4rem;
+}
+.page4-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 4rem;
+}
+.page4-h2{
+    padding-top: 1rem;
+    color: #1f6e8b;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 2rem;
+}
+.page4-p{
+    padding-top: 1rem;
+    color: #ababab;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1rem;
+    width: 43rem;
+}
+.page4-center{
+    display: flex;
+    gap: 4rem;
+}
+.page4-LHS img{
+    width: 800px;
+    height: 500px;
+}
+.page4-RHS{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.cirl{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 2.5rem;
+    background-color: #efefef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cirl:hover{
+    background-color: white;
+    color: #1f6e8b;
+    border: 0.1rem solid #1f6e8b;
+}
+.content{
+    display: flex;
+    gap: 1rem;
+}
+.content-txt{
+    display: flex;
+    flex-direction: column;
+}
+.page4-h4{
+    font-size: 1.25rem;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.page4-pp{
+    padding-top: 0.85rem;
+    color: #ababab;
+    font-family: 'Noto Sans JP', sans-serif;
+    width: 20rem;
+}
+.page4-down{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+}
+.page4-h1{
+    font-size: 2.5rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #1f6e8b;
+}
+.page5{
+    margin-top: 6rem;
+    display: flex;
+    align-items: center;
+    height: 60vh;
+    justify-content: center;
+    padding-bottom: 8rem;
+    flex-direction: column;
+    background: #f8f9fa;
+    gap: 4rem;
+}
+.page5-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 4rem;
+}
+.page5-h2{
+    padding-top: 1rem;
+    color: #1f6e8b;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 2rem;
+}
+.page5-p{
+    padding-top: 1rem;
+    color: #ababab;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1rem;
+    width: 43rem;
+}
+.page5-main{
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.cir1{
+    margin-top: -5rem;
+    position: relative;
+    background-image: url(./images/person_1.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cir2{
+    margin-top: -5rem;
+    position: relative;
+    background-image: url(./images/person_4.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cir3{
+    margin-top: -5rem;
+    position: relative;
+    background-image: url(./images/person_3.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page5-con{
+    width: 25rem;
+    height: 20rem;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.cir{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 1.25rem;
+    color: white;
+    background-color: #1f6e8b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgb(255,225,255, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+.cir:hover{
+    background-color: white;
+    color: #1f6e8b;
+    border: 0.1rem solid #1f6e8b;
+    box-shadow: 0 0 20px rgb(255,225,255, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.icon{
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
+.page5-h5{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1rem;
+}
+.page5-text{
+    text-align: center;
+    width: 22rem;
+}
+.page5-paa{
+    color: #ababab;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 0.9rem;
+}
+.page5-pp{
+    padding-top: 0.5rem;
+}
+.page6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #efefef;
+    padding-bottom: 4rem;
+}
+.page6-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    justify-content: center;
+    padding-top: 4rem;
+}
+.page6-h3{
+    padding-top: 1rem;
+    color: #1f6e8b;
+    font-weight: 400;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 2rem;
+}
+.page6-btn{
+    padding: 1rem 3rem;
+    background: linear-gradient(to right, #8c2b8d, #e52b80);
+    color: white;
+    font-family: 'Noto Sans JP', sans-serif;
+    border: none;
+    border-radius: 4.5rem;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(255,225,255, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+.page6-btn:hover, .page2-top-btn:focus, .page2-top-btn:active{
+    box-shadow: 0 0 20px rgb(255,225,255, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.page6-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14rem;
+}
+.page6-h6{
+    color: #1f6e8b;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+.page6-1{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.page6-1 a{
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #b4b4b4;
+}
+.page6-1 a:hover{
+    text-decoration: underline 0.2rem #1f6e8b solid;
+}
+.page6-p{
+    color: #b4b4b4;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.page6-2{
+    margin-top: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.list{
+    display: flex;
+    gap: 4rem;
+}
+.list ul{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 0.5rem;
+}
+.list ul li a{
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #b4b4b4;
+    transition: ease-out 300ms;
+}
+.list ul li a:hover{
+    text-decoration: underline 0.2rem #1f6e8b solid;
+}
+.page6-3{
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.lists ul{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 0.5rem;
+}
+.lists ul li a{
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #b4b4b4;
+    transition: ease-out 300ms;
+}
+.lists ul li a:hover{
+    text-decoration: underline 0.2rem #1f6e8b solid;
+}
+.boxes{
+    display: flex;
+    gap: 0.5rem;
+}
+.box{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 1rem;
+    color: #777777;
+    background-color: #cccccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgb(255,225,255, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+    cursor: pointer;
+}
+.box:hover{
+    background-color: #1f6e8b;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px rgb(255,225,255, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #efefef;
+    padding-bottom: 4rem;
+}
+.footer-p{
+    color: #b4b4b4;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+
+
+
+
+@media screen and (max-width:1200px){
+    .page1{
+        width: 100vw;
+        background-image: url(./images/hero_bg_1.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center ;
+        height: 100vh;
+        animation: change 5s infinite ease-in-out;
+    }
+    @keyframes change {
+        0%{
+            background-image: url(./images/hero_2.jpg);
+        }
+    }
+    .navbar{
+        margin-top: 1.5rem;
+        position: fixed;
+        display: flex;
+        align-self: start;
+        align-items: center;
+        width: 90vw;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        height: 7vh;
+        background-color: white;
+        justify-content: space-between;
+    }
+    .logo{
+        cursor: pointer;
+        color: #1f6e8b;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+    .navbar ul{
+        text-decoration: none;
+        display: flex;
+        list-style-type: none;
+        gap: 1.5rem;
+    }
+    .navbar li a{
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 1rem;
+        text-decoration: none;
+        font-weight: 300;
+        color: black;
+        transition: ease-out 300ms;
+    }
+    .navbar li a:hover{
+        text-decoration: underline;
+    }
+    .navbar ul li .Home{
+        color: #1f6e8b;
+    }
+    .page1-text{
+        text-align: center;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .page1-h1{
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 2.5rem;
+    }
+    
+    .input{
+        width: 30rem;
+        height: 3rem;
+        border-radius: 12rem;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 1rem;
+        outline: none;
+        padding: 0 2%;
+        border: none;
+    }
+    .page1-btn{
+        padding: 0.7rem 2rem;
+        background: linear-gradient(to right, #8c2b8d, #e52b80);
+        color: white;
+        font-family: 'Noto Sans JP', sans-serif;
+        border: none;
+        border-radius: 1.5rem;
+        cursor: pointer;
+        box-shadow: 0 0 10px rgb(31,110,139, 0.1);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: box-shadow, transform;
+        transition-property: box-shadow, transform;
+    }
+    .page1-btn:hover, .page1-btn:focus, .page1-btn:active{
+        box-shadow: 0 0 20px rgb(31,110,139, 0.5);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    .input-btn{
+        display: flex;
+        gap: 1.5rem;
+    }
+    .page1-p{
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 1rem;
+        width: 45rem;
+    }
+    .page1-text a{
+        color: white;
+    }
+    .page2{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 4rem;
+    }
+    .page2-top{
+        margin-top: 12rem;
+        width: 100rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 34rem;
+    }
+    .top-LHS{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .top-RHS{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .page2-h2{
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 2rem;
+        color: #1f6e8b;
+    }
+    .page2-top-btn{
+        padding: 1rem 2rem;
+        background: linear-gradient(to right, #8c2b8d, #e52b80);
+        color: white;
+        font-family: 'Noto Sans JP', sans-serif;
+        border: none;
+        border-radius: 4rem;
+        cursor: pointer;
+        box-shadow: 0 0 10px rgb(255,225,255, 0.1);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: box-shadow, transform;
+        transition-property: box-shadow, transform;
+    }
+    .page2-top-btn:hover, .page2-top-btn:focus, .page2-top-btn:active{
+        box-shadow: 0 0 20px rgb(255,225,255, 0.5);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    .page2-main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+    .page2-imgs img{
+        padding-top: 2rem;
+        width: 370px;
+        height: 370px;
+    }
+    .page2-text{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .icn-txt{
+        display: flex;
+        gap: 1rem;
+    }
+    .page2-h3{
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 1.3rem;
+    }
+    .page3{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 4rem;
+    }
+    .page3-top{
+        margin-top: 8rem;
+        width: 100rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 42rem;
+    }
+    .page3-h2{
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 2rem;
+        color: #1f6e8b;
+    }
+    .page3-top .top-RHS{
+        gap: 0.5rem;
+    }
+    .page3-btn{
+        padding: 0.5rem 1.3rem;
+        background: #eaf0f3;
+        color: #1f6e8b;
+        font-family: 'Noto Sans JP', sans-serif;
+        border: none;
+        border-radius: 1.3rem;
+        cursor: pointer;
+    }
+    .page3-btn:hover, .page3-btn:focus, .page3-btn:active{
+        background-color: #1f6e8b;
+        color: #eaf0f3;
+    }
+    .page3-main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+    .circle-1{
+        background-image: url(./images/person_1.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .circle-2{
+        background-image: url(./images/person_3.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .circle-3{
+        background-image: url(./images/person_4.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .main{
+        padding-top: 2rem;
+        width: 320px;
+        height: 350px;
+    }
+    .page3-h5{
+        padding-top: 1rem;
+        color: #1f6e8b;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    .page3-p{
+        padding-top: 1rem;
+        width: 20rem;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 0.9rem;
+    }
+    .page3-pp{
+        padding-top: 1rem;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 1rem;
+        color: #ababab;
+    }
+    .page4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 4rem;
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .page4-top{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 4rem;
+    }
+    .page4-h2{
+        width: 30rem;
+        padding-top: 1rem;
+        color: #1f6e8b;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 2rem;
+    }
+    .page4-p{
+        padding-top: 1rem;
+        color: #ababab;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 0.9rem;
+        width: 43rem;
+    }
+    .page4-center{
+        display: flex;
+        gap: 4rem;
+    }
+    .page4-LHS img{
+        width: 600px;
+        height: 400px;
+    }
+    .page4-RHS{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .cirl{
+        width: 5rem;
+        height: 5rem;
+        border-radius: 2.5rem;
+        background-color: #efefef;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cirl:hover{
+        background-color: white;
+        color: #1f6e8b;
+        border: 0.1rem solid #1f6e8b;
+    }
+    .content{
+        display: flex;
+        gap: 1rem;
+    }
+    .content-txt{
+        display: flex;
+        flex-direction: column;
+    }
+    .page4-h4{
+        font-size: 1.25rem;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+    .page4-pp{
+        font-size: 0.9rem;
+        padding-top: 0.85rem;
+        color: #ababab;
+        font-family: 'Noto Sans JP', sans-serif;
+        width: 20rem;
+    }
+    .page4-down{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .page4-h1{
+        font-size: 2.5rem;
+        font-family: 'Noto Sans JP', sans-serif;
+        color: #1f6e8b;
+    }
+    .down-text{
+        margin-right: -4rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .page5{
+        margin-top: 6rem;
+        display: flex;
+        align-items: center;
+        height: 70vh;
+        justify-content: center;
+        padding-bottom: 8rem;
+        flex-direction: column;
+        background: #f8f9fa;
+        gap: 4rem;
+    }
+    .page5-top{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 6rem;
+    }
+    .page5-h2{
+        padding-top: 1rem;
+        color: #1f6e8b;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 2rem;
+    }
+    .page5-p{
+        padding-top: 1rem;
+        color: #ababab;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 0.9rem;
+        width: 35rem;
+    }
+    .page5-main{
+        margin-top: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+    .cir1{
+        margin-top: -5rem;
+        position: relative;
+        background-image: url(./images/person_1.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cir2{
+        margin-top: -5rem;
+        position: relative;
+        background-image: url(./images/person_4.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cir3{
+        margin-top: -5rem;
+        position: relative;
+        background-image: url(./images/person_3.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .page5-con{
+        width: 22rem;
+        height: 20rem;
+        background-color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+    .cir{
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 1.25rem;
+        color: white;
+        background-color: #1f6e8b;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 10px rgb(255,225,255, 0.1);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: box-shadow, transform;
+        transition-property: box-shadow, transform;
+    }
+    .cir:hover{
+        background-color: white;
+        color: #1f6e8b;
+        border: 0.1rem solid #1f6e8b;
+        box-shadow: 0 0 20px rgb(255,225,255, 0.5);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    .icon{
+        display: flex;
+        gap: 1rem;
+        cursor: pointer;
+    }
+    .page5-h5{
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 1rem;
+    }
+    .page5-text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .page5-paa{
+        color: #ababab;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 0.9rem;
+    }
+    .page5-pp{
+        text-align: center;
+        width: 17rem;
+        padding-top: 0.5rem;
+    }
+    .page6{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2rem;
+        background-color: #efefef;
+        padding-bottom: 4rem;
+    }
+    .page6-top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        justify-content: center;
+        padding-top: 4rem;
+    }
+    .page6-h3{
+        padding-top: 1rem;
+        color: #1f6e8b;
+        font-weight: 400;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 2rem;
+    }
+    .page6-btn{
+        padding: 1rem 3rem;
+        background: linear-gradient(to right, #8c2b8d, #e52b80);
+        color: white;
+        font-family: 'Noto Sans JP', sans-serif;
+        border: none;
+        border-radius: 4.5rem;
+        cursor: pointer;
+        box-shadow: 0 0 10px rgb(255,225,255, 0.1);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: box-shadow, transform;
+        transition-property: box-shadow, transform;
+    }
+    .page6-btn:hover, .page2-top-btn:focus, .page2-top-btn:active{
+        box-shadow: 0 0 20px rgb(255,225,255, 0.5);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    .page6-main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8rem;
+    }
+    .page6-h6{
+        color: #1f6e8b;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+    }
+    .page6-1{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .page6-1 a{
+        font-family: 'Noto Sans JP', sans-serif;
+        color: #b4b4b4;
+    }
+    .page6-1 a:hover{
+        text-decoration: underline 0.2rem #1f6e8b solid;
+    }
+    .page6-p{
+        color: #b4b4b4;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+    .page6-2{
+        margin-top: 4.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .list{
+        display: flex;
+        gap: 4rem;
+    }
+    .list ul{
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        gap: 0.5rem;
+    }
+    .list ul li a{
+        font-family: 'Noto Sans JP', sans-serif;
+        color: #b4b4b4;
+        transition: ease-out 300ms;
+    }
+    .list ul li a:hover{
+        text-decoration: underline 0.2rem #1f6e8b solid;
+    }
+    .page6-3{
+        margin-top: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .lists ul{
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        gap: 0.5rem;
+    }
+    .lists ul li a{
+        font-family: 'Noto Sans JP', sans-serif;
+        color: #b4b4b4;
+        transition: ease-out 300ms;
+    }
+    .lists ul li a:hover{
+        text-decoration: underline 0.2rem #1f6e8b solid;
+    }
+    .boxes{
+        display: flex;
+        gap: 0.5rem;
+    }
+    .box{
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 1rem;
+        color: #777777;
+        background-color: #cccccc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 10px rgb(255,225,255, 0.1);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: box-shadow, transform;
+        transition-property: box-shadow, transform;
+        cursor: pointer;
+    }
+    .box:hover{
+        background-color: #1f6e8b;
+        color: white;
+        border: none;
+        box-shadow: 0 0 20px rgb(255,225,255, 0.5);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #efefef;
+        padding-bottom: 4rem;
+    }
+    .footer-p{
+        color: #b4b4b4;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+}
+
+
+
+
+
+@media screen and (max-width:996px){
+    .page1{
+        width: 100vw;
+        background-image: url(./images/hero_bg_1.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center ;
+        height: 100vh;
+        animation: change 5s infinite ease-in-out;
+    }
+    @keyframes change {
+        0%{
+            background-image: url(./images/hero_2.jpg);
+        }
+    }
+    .navbar{
+        margin-top: 1.5rem;
+        position: fixed;
+        display: flex;
+        align-self: start;
+        align-items: center;
+        width: 90vw;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        height: 7vh;
+        background-color: white;
+        justify-content: space-between;
+    }
+    .logo{
+        cursor: pointer;
+        color: #1f6e8b;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+    .navbar ul{
+        text-decoration: none;
+        display: flex;
+        list-style-type: none;
+        gap: 1.5rem;
+    }
+    .navbar li a{
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 1rem;
+        text-decoration: none;
+        font-weight: 300;
+        color: black;
+        transition: ease-out 300ms;
+    }
+    .navbar li a:hover{
+        text-decoration: underline;
+    }
+    .navbar ul li .Home{
+        color: #1f6e8b;
+    }
+    .page1-text{
+        text-align: center;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .page1-h1{
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 2.5rem;
+    }
+    
+    .input{
+        width: 30rem;
+        height: 3rem;
+        border-radius: 12rem;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 1rem;
+        outline: none;
+        padding: 0 2%;
+        border: none;
+    }
+    .page1-btn{
+        padding: 0.7rem 2rem;
+        background: linear-gradient(to right, #8c2b8d, #e52b80);
+        color: white;
+        font-family: 'Noto Sans JP', sans-serif;
+        border: none;
+        border-radius: 1.5rem;
+        cursor: pointer;
+        box-shadow: 0 0 10px rgb(31,110,139, 0.1);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: box-shadow, transform;
+        transition-property: box-shadow, transform;
+    }
+    .page1-btn:hover, .page1-btn:focus, .page1-btn:active{
+        box-shadow: 0 0 20px rgb(31,110,139, 0.5);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    .input-btn{
+        display: flex;
+        gap: 1.5rem;
+    }
+    .page1-p{
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 1rem;
+        width: 45rem;
+    }
+    .page1-text a{
+        color: white;
+    }
+    .page2{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 4rem;
+    }
+    .page2-top{
+        margin-top: 12rem;
+        width: 100rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 22rem;
+    }
+    .top-LHS{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .top-RHS{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .page2-h2{
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 2rem;
+        color: #1f6e8b;
+    }
+    .page2-top-btn{
+        padding: 1rem 2rem;
+        background: linear-gradient(to right, #8c2b8d, #e52b80);
+        color: white;
+        font-family: 'Noto Sans JP', sans-serif;
+        border: none;
+        border-radius: 4rem;
+        cursor: pointer;
+        box-shadow: 0 0 10px rgb(255,225,255, 0.1);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: box-shadow, transform;
+        transition-property: box-shadow, transform;
+    }
+    .page2-top-btn:hover, .page2-top-btn:focus, .page2-top-btn:active{
+        box-shadow: 0 0 20px rgb(255,225,255, 0.5);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    .page2-main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+    .page2-imgs img{
+        padding-top: 2rem;
+        width: 300px;
+        height: 300px;
+    }
+    .page2-text{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .icn-txt{
+        display: flex;
+        gap: 1rem;
+    }
+    .page2-h3{
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 1.3rem;
+    }
+    .page3{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 4rem;
+    }
+    .page3-top{
+        margin-top: 8rem;
+        width: 100rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 32rem;
+    }
+    .page3-h2{
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 2rem;
+        color: #1f6e8b;
+    }
+    .page3-top .top-RHS{
+        gap: 0.5rem;
+    }
+    .page3-btn{
+        padding: 0.5rem 1rem;
+        background: #eaf0f3;
+        color: #1f6e8b;
+        font-family: 'Noto Sans JP', sans-serif;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+    .page3-btn:hover, .page3-btn:focus, .page3-btn:active{
+        background-color: #1f6e8b;
+        color: #eaf0f3;
+    }
+    .page3-main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+    .circle-1{
+        background-image: url(./images/person_1.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .circle-2{
+        background-image: url(./images/person_3.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .circle-3{
+        background-image: url(./images/person_4.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .main{
+        padding-top: 2rem;
+        width: 270px;
+        height: 370px;
+    }
+    .page3-h5{
+        padding-top: 1rem;
+        color: #1f6e8b;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    .page3-p{
+        padding-top: 1rem;
+        width: 15rem;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 0.9rem;
+    }
+    .page3-pp{
+        padding-top: 1rem;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 1rem;
+        color: #ababab;
+    }
+    .page4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 4rem;
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .page4-top{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 4rem;
+    }
+    .page4-h2{
+        width: 30rem;
+        padding-top: 1rem;
+        color: #1f6e8b;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 2rem;
+    }
+    .page4-p{
+        padding-top: 1rem;
+        color: #ababab;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 0.9rem;
+        width: 30rem;
+    }
+    .page4-center{
+        display: flex;
+        gap: 4rem;
+    }
+    .page4-LHS img{
+        width: 500px;
+        height: 350px;
+    }
+    .page4-RHS{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .cirl{
+        width: 5rem;
+        height: 5rem;
+        border-radius: 2.5rem;
+        background-color: #efefef;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cirl:hover{
+        background-color: white;
+        color: #1f6e8b;
+        border: 0.1rem solid #1f6e8b;
+    }
+    .content{
+        display: flex;
+        gap: 1rem;
+    }
+    .content-txt{
+        display: flex;
+        flex-direction: column;
+    }
+    .page4-h4{
+        font-size: 1.25rem;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+    .page4-pp{
+        font-size: 0.9rem;
+        padding-top: 0.85rem;
+        color: #ababab;
+        font-family: 'Noto Sans JP', sans-serif;
+        width: 15rem;
+    }
+    .page4-down{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+    }
+    .page4-h1{
+        font-size: 2.5rem;
+        font-family: 'Noto Sans JP', sans-serif;
+        color: #1f6e8b;
+    }
+    .down-text{
+        margin-right: -4rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .page5{
+        margin-top: 6rem;
+        display: flex;
+        align-items: center;
+        height: 70vh;
+        justify-content: center;
+        padding-bottom: 8rem;
+        flex-direction: column;
+        background: #f8f9fa;
+        gap: 4rem;
+    }
+    .page5-top{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 6rem;
+    }
+    .page5-h2{
+        padding-top: 1rem;
+        color: #1f6e8b;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 2rem;
+    }
+    .page5-p{
+        padding-top: 1rem;
+        color: #ababab;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 0.9rem;
+        width: 30rem;
+    }
+    .page5-main{
+        margin-top: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+    .cir1{
+        margin-top: -5rem;
+        position: relative;
+        background-image: url(./images/person_1.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cir2{
+        margin-top: -5rem;
+        position: relative;
+        background-image: url(./images/person_4.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cir3{
+        margin-top: -5rem;
+        position: relative;
+        background-image: url(./images/person_3.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .page5-con{
+        width: 18rem;
+        height: 20rem;
+        background-color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+    .cir{
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 1.25rem;
+        color: white;
+        background-color: #1f6e8b;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 10px rgb(255,225,255, 0.1);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: box-shadow, transform;
+        transition-property: box-shadow, transform;
+    }
+    .cir:hover{
+        background-color: white;
+        color: #1f6e8b;
+        border: 0.1rem solid #1f6e8b;
+        box-shadow: 0 0 20px rgb(255,225,255, 0.5);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    .icon{
+        display: flex;
+        gap: 1rem;
+        cursor: pointer;
+    }
+    .page5-h5{
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 1rem;
+    }
+    .page5-text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .page5-paa{
+        color: #ababab;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 0.9rem;
+    }
+    .page5-pp{
+        text-align: center;
+        width: 14rem;
+        padding-top: 0.5rem;
+    }
+    .page6{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2rem;
+        background-color: #efefef;
+        padding-bottom: 4rem;
+    }
+    .page6-top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        justify-content: center;
+        padding-top: 4rem;
+    }
+    .page6-h3{
+        width: 33rem;
+        text-align: center;
+        padding-top: 1rem;
+        color: #1f6e8b;
+        font-weight: 400;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 2rem;
+    }
+    .page6-btn{
+        padding: 1rem 3rem;
+        background: linear-gradient(to right, #8c2b8d, #e52b80);
+        color: white;
+        font-family: 'Noto Sans JP', sans-serif;
+        border: none;
+        border-radius: 4.5rem;
+        cursor: pointer;
+        box-shadow: 0 0 10px rgb(255,225,255, 0.1);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: box-shadow, transform;
+        transition-property: box-shadow, transform;
+    }
+    .page6-btn:hover, .page2-top-btn:focus, .page2-top-btn:active{
+        box-shadow: 0 0 20px rgb(255,225,255, 0.5);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    .page6-main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+    }
+    .page6-h6{
+        color: #1f6e8b;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+    }
+    .page6-1{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .page6-1 a{
+        font-family: 'Noto Sans JP', sans-serif;
+        color: #b4b4b4;
+    }
+    .page6-1 a:hover{
+        text-decoration: underline 0.2rem #1f6e8b solid;
+    }
+    .page6-p{
+        color: #b4b4b4;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+    .page6-2{
+        margin-top: 4.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .list{
+        display: flex;
+        gap: 4rem;
+    }
+    .list ul{
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        gap: 0.5rem;
+    }
+    .list ul li a{
+        font-family: 'Noto Sans JP', sans-serif;
+        color: #b4b4b4;
+        transition: ease-out 300ms;
+    }
+    .list ul li a:hover{
+        text-decoration: underline 0.2rem #1f6e8b solid;
+    }
+    .page6-3{
+        margin-top: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .lists ul{
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        gap: 0.5rem;
+    }
+    .lists ul li a{
+        font-family: 'Noto Sans JP', sans-serif;
+        color: #b4b4b4;
+        transition: ease-out 300ms;
+    }
+    .lists ul li a:hover{
+        text-decoration: underline 0.2rem #1f6e8b solid;
+    }
+    .boxes{
+        display: flex;
+        gap: 0.5rem;
+    }
+    .box{
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 1rem;
+        color: #777777;
+        background-color: #cccccc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 10px rgb(255,225,255, 0.1);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: box-shadow, transform;
+        transition-property: box-shadow, transform;
+        cursor: pointer;
+    }
+    .box:hover{
+        background-color: #1f6e8b;
+        color: white;
+        border: none;
+        box-shadow: 0 0 20px rgb(255,225,255, 0.5);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #efefef;
+        padding-bottom: 4rem;
+    }
+    .footer-p{
+        color: #b4b4b4;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+}
